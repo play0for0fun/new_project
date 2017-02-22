@@ -1,6 +1,6 @@
 $fontfamily:'Roboto';
 $afont:'Roboto';
-$wievport: 980px;
+$wievport: 1020px;
 $dark: #141414;
 
 @mixin ibw() {
@@ -27,14 +27,14 @@ $dark: #141414;
         z-index: 2;
         height: 100%;
         margin: 0 auto;
-        &>div{
-            width: 100%;
-            position: absolute;
-            height: 600px;
-            top: 50%;
-            margin-top: -300px;
-            
-        }
+        //&>div{
+        //    width: 100%;
+        //    position: absolute;
+        //    height: 600px;
+        //    top: 50%;
+        //    margin-top: -300px;
+        //    
+        //}
     }
 }
 *{margin:0;padding:0;box-sizing:border-box;background-position:center;background-repeat:no-repeat}
@@ -54,8 +54,66 @@ section{
     left: 0;
     width: 100%;
     background: url(../maket.jpg) no-repeat top center;
-    height: 13200px;
+    height: 7200px;
     opacity: 0.5;
     z-index: 10;  
 }
 
+#sec1 {
+    background-image: url(../img/sec_bg1.jpg);
+    height: 760px;
+    color: white;
+    .wrap {
+    }
+    .logo {
+        margin: 30px auto 21px;
+        background-image: url(../img/logo.png);
+        width: 100%;
+        height: 120px;
+        display: block;
+    }
+    .menu {
+        display: block;
+        text-align: center;
+        list-style: none;
+        letter-spacing: 49px;
+        
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: normal;
+            position: relative;
+            &:after{
+                display: block;
+                background-image: url(../img/list-ico.png);
+                width: 20px;
+                height: 4px;
+                position: absolute;
+                right: -34px;
+                top: 11px;
+            }
+            &:last-of-type:after{
+                content: none;
+            }
+        }
+    }
+    .phone {
+    }
+    .button {
+    }
+    .hr {
+    }
+    .address {
+    }
+    span {
+    }
+    a {
+        &:hover{
+        }
+    }
+    .mouse {
+    }
+    .italic {
+    }
+}
